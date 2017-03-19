@@ -1,0 +1,64 @@
+<!--
+each h1 turns into a folder
+each h2 turns into a subfolder within the previous h1
+for each row, the first column must be a th and gets a subfolder of previous h2
+for each column (with no colspan) fetch link and name and prefix it with th of the same column from the thead element
+for columns with colspan fetch link and name and put it in the parent folder
+-->
+
+<html>
+    <head>
+        <title></title>
+    </head>
+
+    <body>
+        <h1>System</h1>
+        <h2>Dev</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>DE</th>
+                    <th>AT</th>
+                    <th>CH</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Stage A</th>
+                    <td>
+                        <a href="fooA">bar</a>
+                        <a href="googleA">baz</a>
+                        <a href="facebookA">bam</a>
+                    </td>
+                    <td>
+                        <a href="alinkA">a text</a>
+                    </td>
+                    <td>
+                        <a href="anotherlinkA">another text</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Stage B</th>
+                    <td>
+                        <a href="fooB">bar</a>
+                        <a href="googleB">baz</a>
+                        <a href="facebookB">bam</a>
+                    </td>
+                    <td>
+                        <a href="alinkB">a text</a>
+                    </td>
+                    <td>
+                        <a href="anotherlinkB">another text</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Stuff for all</th>
+                    <td colspan="3">
+                        <a href="asuperlink">a super text</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
